@@ -99,7 +99,7 @@
         joystickYVal.textContent = y;
 
         // Envia para o servidor (substitua pela URL correta do seu ESP8266)
-        fetch(`http://192.168.1.100:8080/control?x=${x}&y=${y}`)
+        fetch(`https://fabiana784.github.io/AppVitoria/`)
           .then((response) => response.json())
           .then((data) => console.log("Dados enviados:", data))
           .catch((error) => console.error("Erro ao enviar dados:", error));
